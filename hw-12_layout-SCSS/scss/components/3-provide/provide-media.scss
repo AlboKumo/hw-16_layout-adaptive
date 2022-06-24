@@ -1,0 +1,107 @@
+.provide {
+
+  @media (max-width: 1280px) {
+    padding: 90px 0;
+
+    .row {
+      display: block;
+    }
+    .col{
+      width: auto;
+    }
+
+    &__info {
+      text-align: center;
+      &-title {
+        font-size: calc(#{$fs__title-m} - (#{$media-l} * 6));
+        margin-bottom: 20px;
+      }
+
+      &-description {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        font-size: calc(#{$fs__normal} - #{$media-l});
+      }
+
+      &-btn {
+        margin-bottom: 60px;
+        padding: 5px 40px;
+        font-size: calc(#{$fs__normal} - #{$media-l});
+      }
+    }
+
+    &__represent {
+      margin: 0 auto;
+      justify-content: center;
+      column-gap: 20px;
+
+      &-item {
+        max-width: 20%;
+      }
+
+      &-img {
+        margin-bottom: 20px;
+        transform: scale(0.9);
+      }
+
+      &-title {
+        font-size: calc(#{$fs__medium} - #{$media-l});
+      }
+
+      &-description {
+        font-size: calc(#{$fs__normal} - #{$media-l});
+      }
+    }
+  }
+
+  @media (max-width: 930px) {
+    &__represent {
+      text-align: center;
+      &-item {
+        max-width: 50%;
+        width: auto;
+        margin: 0 auto 30px;
+      }
+
+      &-img {
+        margin: 0 auto 12px;
+        transform: scale(0.7);
+      }
+    }
+  }
+
+  @media (max-width: 630px) {
+    &__represent {
+      &-item {
+        max-width: 100%;
+      }
+
+      &-title {
+        font-size: calc(#{$fs__medium} - #{$media-m});
+      }
+
+      &-description {
+        max-width: 80%;
+        margin: 0 auto 6px;
+        font-size: calc(#{$fs__normal} - #{$media-m});
+      }
+    }
+
+  }
+
+  @media (max-width: 500px) {
+
+    &__info {
+      &-title {
+        line-height: 30px;
+        max-width: 340px;
+        margin-right:  auto; margin-left: auto; //Я не хотел переписывать (всмысле повторять) отступы которые уже есть, потому просто написал в две стороны что мне нужны (0auto сбросит мне margin-bottom)
+      }
+
+      &-description {
+        font-size: calc(#{$fs__normal} - #{$media-s});
+        line-height: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.design {
+  background-color: $second-block__bg-color;
+  padding: 140px 0;
+  text-align: center;
+
+  &-title {
+    color: $first-global__bg-color;
+    font-weight: bold;
+    font-size: $fs__title-m;
+    margin-bottom: 40px;
+  }
+
+  &-description {
+    color: $first-global__bg-color;
+    margin-bottom: 60px;
+  }
+
+  &__block {
+    form {
+      display: inline-block;
+    }
+
+    input {
+      background-color: $first-global__bg-color;
+      padding: 27px 35px;
+      width: 520px;
+      border-radius: 5px;
+      border: none;
+      margin-right: 12px;
+    }
+
+    &-btn {
+      background-color: $accent-color;
+      color: $first-global__bg-color;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 18px;
+      padding: 27px 60px;
+      border-radius: 5px;
+      cursor: pointer;
+      border: solid $accent-color 2px;
+    }
+    &-btn:hover {
+      transition: $transition_timer;
+      color: $accent-color;
+      background-color: $first-global__bg-color;
+    }
+  }
+}

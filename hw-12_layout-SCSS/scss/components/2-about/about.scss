@@ -1,0 +1,45 @@
+$about-line-height: 70px;
+
+.about {
+  padding: 110px 0;
+  background-color: $second-global__bg-color;
+
+  .row {
+    column-gap: 110px;
+  }
+
+  &__info{
+    &-title {
+      font-size: $fs__title-l;
+      font-weight: 800;
+      text-transform: uppercase;
+      line-height: $about-line-height;
+      letter-spacing: 3px;
+      margin-bottom: 35px;
+      color: $first__font-color;
+    }
+
+    &-description {
+      max-width: 515px;
+      margin-bottom: 60px;
+    }
+
+    &-btn {
+      background-color: $accent-color;
+      color: $first-global__bg-color;
+    }
+    &-btn:hover {
+      background-color: transparent;
+      color: $accent-color;
+      transition: $transition_timer;
+    }
+  }
+
+  &__video {
+    iframe {
+      width: 100%;
+      border: none;
+      box-shadow: 0 0 55px -20px #000000;
+    }
+  }
+}

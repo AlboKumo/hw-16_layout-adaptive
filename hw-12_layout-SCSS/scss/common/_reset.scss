@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+body,
+h1, h2, h3, h4,
+p, ul, ol, li,
+figure, figcaption, blockquote,
+dl, dd, dt {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+address {
+  font-style: normal;
+}
+
+input, textarea {
+  border: none;
+  border-radius: 5px;
+  resize: none;
+  font: inherit;
+}

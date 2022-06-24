@@ -1,0 +1,20 @@
+.header {
+  padding-top: 30px;
+  background-color: $second-global__bg-color;
+
+    &__navigation{
+      background-color: $first-block__bg-color;
+
+      a {
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $third__font-color;
+        padding: 45px 25px 35px;
+      }
+      .active a,
+      a:hover {
+        background-color: $accent-color;
+        transition: $transition_timer;
+      }
+    }
+}

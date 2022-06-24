@@ -1,0 +1,56 @@
+.design {
+  @media (max-width: 1080px) {
+    padding: 100px 0;
+    &-title {
+      font-size: $fs__medium;
+      margin-bottom: 20px;
+    }
+    &-description {
+      font-size: 14px;
+      margin-bottom: 45px;
+    }
+
+    &__block {
+      font-size: 14px;
+      input {
+        padding: 17px 35px;
+        width: 320px;
+      }
+
+      &-btn {
+        font-size: 16px;
+        padding: 17px 50px;
+      }
+    }
+  }
+
+  @media (max-width: 780px) {
+    padding: 70px 0;
+    &-title {
+      font-size: 20px;
+    }
+
+    &-description {
+      font-size: 12px;
+      margin-bottom: 30px;
+    }
+
+    &__block {
+      input {
+        padding: 10px 25px;
+        width: 320px;
+      }
+      &-btn {
+        padding: 8px 40px;
+        font-size: 13px;
+      }
+    }
+  }
+
+  @media (max-width: 540px) {
+    padding: 50px 0;
+    &__block input {
+      margin-bottom: 16px;
+    }
+  }
+}

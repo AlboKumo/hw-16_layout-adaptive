@@ -1,0 +1,19 @@
+.footer {
+  height: 110px;
+  background-color: $first-block__bg-color;
+  color: $third__font-color;
+
+  .container {
+    align-items: center;
+    display: flex;
+    padding: 35px;
+    justify-content: space-between;
+  }
+  p {
+    width: 400px;
+  }
+  ul {
+    column-gap: 10px;
+    display: flex;
+  }
+}
