@@ -33,28 +33,50 @@
   }
 
   @media (max-width: 1098px) {
-    &__form {
-      max-width: 220px;
-
-      &-class {
-        max-width: 220px;
-      }
-
-      &-name {
-        margin: 0 0 20px 0;
-      }
-    }
-
     &__wrapper {
       margin: 0 auto;
       justify-content: center;
+      display: block;
+
+      &-block {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 60px;
+      }
     }
 
     &__contact {
+      &-title {
+        font-size: 16px;
+      }
       font-size: 12px;
-      padding: 35px 0 0 10px;
-      margin-left: 12px;
-      width: 100px;
+      padding: 35px;
+      width: 60%;
+      text-align: center;
+      margin: 0 auto;
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 563px) {
+    &__form-wrapper {
+      justify-content: space-between;
+      label {
+        input {
+          margin: 0 auto 25px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 425px) {
+    &__form-class {
+      width: 140px;
+    }
+    .get-title {
+      line-height: 40px;
     }
   }
 }

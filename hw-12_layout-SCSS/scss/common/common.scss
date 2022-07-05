@@ -66,3 +66,33 @@ a {
   background-color: $accent-color;
   padding: 0;
 }
+
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 992px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 767px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 567px;
+  }
+}
+
+@media (max-width: 567px) {
+  .container {
+    max-width: 100%;
+  }
+}
