@@ -7,6 +7,11 @@
       }
     }
   }
+
+  @media (max-width: 576px) {
+    display: none;
+  }
+
   @media (max-width: 540px) {
     &__navigation {
       a {

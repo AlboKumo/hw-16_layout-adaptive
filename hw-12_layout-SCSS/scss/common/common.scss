@@ -5,6 +5,10 @@ body {
   line-height: 26px;
 }
 
+main {
+  overflow-x: hidden;
+}
+
 a {
   color: $second__font-color;
   display: inline-block;

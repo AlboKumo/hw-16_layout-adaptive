@@ -25,9 +25,12 @@
       textarea {
         padding: 16px 30px;
       }
-
-      &-wrapper {
-        justify-content: center;
+      label {
+        width: 47%;
+      }
+      input {
+        max-width: 100%;
+        width: 100%;
       }
     }
   }
@@ -49,13 +52,28 @@
       &-title {
         font-size: 16px;
       }
+
       font-size: 12px;
       padding: 35px;
-      width: 60%;
+      width: 100%;
       text-align: center;
       margin: 0 auto;
       &:after {
         display: none;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__form {
+      label {
+        width: 100%;
+      }
+      &-class {
+        margin-bottom: 20px;
+      }
+      textarea {
+        margin-bottom: 25px;
       }
     }
   }
@@ -72,9 +90,6 @@
   }
 
   @media (max-width: 425px) {
-    &__form-class {
-      width: 140px;
-    }
     .get-title {
       line-height: 40px;
     }

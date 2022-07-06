@@ -35,10 +35,6 @@
       font-size: 18px;
     }
 
-    &-name {
-      margin-right: 54px;
-    }
-
     #get__full-label-size {
       width: 100%;
     }
@@ -66,6 +62,7 @@
       display: flex;
       flex-wrap: wrap;
       max-width: 730px;
+      justify-content: space-between;
 
       textarea {
         height: 250px;
